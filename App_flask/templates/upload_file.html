@@ -1,0 +1,27 @@
+{%block title %}Hello Welcome to File Upload!{% endblock %}
+
+{% block main %}
+  <div class="conatainer">
+    <div class="row">
+        <div class="col">
+
+            <h1>Browse files to upload</h1>
+            <hr>
+            <form action="/upload_file" method="POST" enctype="multipart/form-data">
+            
+            <div class="form-group">
+                <label>select file to upload to server</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="file_uplserver" id="file_uplserver">
+                    <input type="file" class="custom-file-input" name="file_uplserver2" id="file_uplserver2">
+                    <label class="custom-file-label" for="file_uplserver"></label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+  {% endblock %}
+  
